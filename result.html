@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #6dd5fa, #2980b9);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+        .container {
+            background: #fff;
+            color: #333;
+            max-width: 400px;
+            width: 90%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h1 {
+            color: #2980b9;
+            font-size: 28px;
+        }
+        p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        .species {
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+            background: linear-gradient(135deg, #6dd5fa, #2980b9);
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        a:hover {
+            background: linear-gradient(135deg, #2980b9, #6dd5fa);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <p>The predicted species is:</p>
+        <p class="species">{{ species }}</p>
+        <a href="/">Make Another Prediction</a>
+    </div>
+</body>
+</html>
